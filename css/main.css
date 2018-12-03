@@ -1,0 +1,128 @@
+/*Спецификация*/
+body{
+    font-family: 'Oswald' serif;
+    color: black;
+}
+html{
+    overflow-x: hidden;
+}
+input[type="number"]::placeholder { color: black; }
+input[type="text"]::placeholder { color: black; }
+input[type="email"]::placeholder { color: black; }
+.blackWhite{
+    color: white;
+    background: black;
+}
+p1{
+    font-size: 36px;
+
+}
+p2{
+    font-size: 30px;
+}
+p3{
+    font-size: 24px;
+}
+p4{
+    font-size: 20px;
+}
+p5{
+    font-size: 16px;
+}
+p6{
+    font-size: 14px;
+}
+p7{
+    font-size: 12px;
+}
+p8{
+    font-size: 10px;
+}
+.grey{
+    background: url("../image/fon.jpg") no-repeat;
+    background-size: cover;
+    filter: grayscale(70%);
+}
+.grey1{
+    background: url("../image/fon1.jpg") no-repeat;
+    background-size: cover;
+    filter: grayscale(80%);
+}
+.border1{
+    border: black outset;
+    border-width: 0 0 5px  0;
+}
+.size1{
+    font-size: 2em;
+    font-weight: bolder;
+    color: white;
+    background: black;
+    border-radius: 0px;
+}
+.size2{
+    font-size: 14px;
+    font-weight: bolder;
+    color: white;
+    background: black;
+    border-radius: 0px;
+}
+.size3{
+    font-size: 1.5em;
+    font-weight: bolder;
+    color: white;
+    background: black;
+    border-radius: 0px;
+}
+.para{
+    font-size: 2em;
+    height: 60px;
+    border: black outset 1px;
+    border-radius: 0px;
+    color: black;
+}
+.para1{
+    font-size: 1.25em;
+    height: 40px;
+    border: black outset 1px;
+    border-radius: 0px;
+    color: black;
+}
+.border2{
+    border: black outset;
+    border-width: 0 1.5px 0 0;
+}
+.border3{
+    border: black outset;
+    border-width: 0 0 0  1.5px;
+}
+.border4{
+    border: black outset;
+    border-width: 0 1.5px 0 1.5px;
+}
+.round{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    font-size: 50px;
+    color: #fff;
+    line-height: 100px;
+    text-align: center;
+    background: #000
+}
+.probel{
+    height: 2vh;
+}
+.modal1{
+    border-radius: 0px;
+    background: black;
+}
+.modal3{
+    border-radius: 0px;
+    background: black;
+}
+.modal2{
+    border-radius: 0px;
+}
+.image{
+    width: 100%;
+}

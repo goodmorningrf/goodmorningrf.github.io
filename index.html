@@ -1,192 +1,573 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Good Morning</title>
+    <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/calculator.js"></script>
+</head>
+<body>
+<header class="header" id="header">
+    <div class="container">
+        <div class="row border1 text-center">
+            <div class="col-lg-1">
+               <img src="image/logo.png" width="70px" height="70px">
+            </div>
+            <div class="col-lg-7 pt-2">
+                <p1><strong>Самая актуальная <strong class="blackWhite">база контактов</strong></strong></p1>
+            </div>
+            <div class="col-lg-3 pt-3 text-left">
+                <p5><i class="fas fa-phone"></i> 8-863-307-86-04</p5>
+                <br>
+                <p5><i class="fas fa-at"></i> goodmorningrf1@gmail.com</p5>
+            </div>
+        </div>
+        <div class="row pt-3">
+            <div class="col-lg-5 text-center">
+                <p3><strong>Успей заказать и получи в подарок:</strong></p3>
+                <br>
+                <p1><strong class="blackWhite">3000 контактов</strong></p1>
+                <br>
+                <script src="https://e-timer.ru/js/etimer.js"></script>
+                <script type="text/javascript">
+                    jQuery(document).ready(function() {
+                        jQuery(".eTimer").eTimer({
+                            etType: 2, etDate: "03.12.2018.0.0", etTitleText: "", etTitleSize: 10, etShowSign: 0, etSep: ":", etFontFamily: "Arial", etTextColor: "black", etPaddingTB: 0, etPaddingLR: 0, etBackground: "transparent", etBorderSize: 0, etBorderRadius: 0, etBorderColor: "white", etShadow: " 0px 0px 0px 0px #333333", etLastUnit: 4, etNumberFontFamily: "Arial", etNumberSize: 48, etNumberColor: "black", etNumberPaddingTB: 0, etNumberPaddingLR: 0, etNumberBackground: "transparent", etNumberBorderSize: 0, etNumberBorderRadius: 5, etNumberBorderColor: "white", etNumberShadow: "inset 0px 0px 0px 0px rgba(0, 0, 0, 0.5)"
+                        });
+                    });
+                </script>
+                <div class="eTimer"></div>
+                <form action="https://formspree.io/bonobogroup0@gmail.com" method="POST">
+                    <div class="form-group">
+                        <input type="number" class="form-control para" placeholder="Номер телефона" name="phone number">
+                    </div>
+                    <button class="btn btn-light btn-lg btn-block size1" type="submit" value="Send">Заказать</button>
+                </form>
+            </div>
+            <div class="col-lg-7 grey"></div>
+        </div>
+    </div>
+</header>
 
-  <head>
-
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Good morning</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css/stylish-portfolio.min.css" rel="stylesheet">
-
-  </head>
-
-  <body id="page-top">
-
-    <!-- Navigation -->
-    <a class="menu-toggle rounded" href="#">
-      <i class="fas fa-bars"></i>
-    </a>
-    <nav id="sidebar-wrapper">
-      <ul class="sidebar-nav">
-        <li class="sidebar-brand">
-          <a class="js-scroll-trigger" href="#page-top">Good morning</a>
-        </li>
-        <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="#page-top">Домой</a>
-        </li>
-        <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="#about">О нас</a>
-        </li>
-        <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="#services">Приемущества</a>
-        </li>
-        <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="#price">Прайс лист</a>
-        </li>
-        <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="#order">Заказать</a>
-        </li>
-      </ul>
-    </nav>
-
-    <!-- Header -->
-    <header class="masthead d-flex">
-      <div class="container text-center my-auto">
-        <h1 class= "mb-2">День начинается не с кофе</h1>
-
-        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Узнать больше</a>
-      </div>
-      <div class="overlay"></div>
-    </header>
-
-    <!-- About -->
-    <section class="content-section bg-light" id="about">
-      <div class="container text-center">
+<section class="top" id="top">
+    <div class="container pt-2">
         <div class="row">
-          <div class="col-lg-10 mx-auto">
-            <h2>Хотите иметь самую актуальную базу клиентов каждый день? <strong>ДОБРО ПОЖАЛОВАТЬ К НАМ!</strong> </h2>
-            <p class="lead mb-5">Каждое утро, вам на почту будет приходить письмо с самым свежим, только что собранным по вашим предпочтениям списком ваших потенциальных клиентов.
-              Наши базы собраны из открытых источников. Вы можете работать с предоставляемыми данными абсолютно законно, не опасаясь претензий со стороны потенциальных покупателей.
-              <a class="row"></a>
-              <a class="btn btn-dark btn-xl js-scroll-trigger button-form" href="#services">Приемущества</a>
-          </div>
+            <div class="col-lg-12 text-justify">
+                <p2> Наши базы собраны из открытых источников. Вы можете работать с предоставленными данными абсолютно законно, не опасаясь претензий со стороны потенциальных покупателей.</p2>
+            </div>
+            <div class="col-lg-12 text-center">
+                <p1><strong>Мы работаем по двум направлениям:</strong></p1>
+            </div>
+            <div class="col-lg-6 border2 pt-2">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <p2><strong class="coffee">День начинается не с кофе!</strong></p2>
+                    </div>
+                    <div class="col-lg-12 text-justify">
+                        <p3>Каждое утро, вам на почту будет приходить письмо с самым свежим, только что собранным по вашим предпочтениям, списком ваших потенциальных клиентов.</p3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 pt-2 border3">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <p2><strong>Получите - распишитесь!</strong></p2>
+                    </div>
+                    <div class="col-lg-12 text-justify">
+                        <p3>Мы сделаем полную выгрузку базы по вашим критериям и вышлем вам на почту в течение суток после заказа. </p3>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Services -->
-    <section class="content-section bg-primary text-white text-center" id="services">
-      <div class="container">
-        <div class="content-section-heading">
-          <h3 class="text-secondary mb-0"></h3>
-          <h2 class="mb-5">Приемущества</h2>
-        </div>
+<section class="center" id="center">
+    <div class="container pt-2 border1">
         <div class="row">
-          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-            <span class="service-icon rounded-circle mx-auto mb-3">
-              <i class="fas fa-business-time"></i>
-            </span>
-            <h4>
-              <strong>Актуальность</strong>
-            </h4>
-            <p class="text-faded mb-0">Клиенты не замученные звонками</p>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-            <span class="service-icon rounded-circle mx-auto mb-3">
-              <i class="fas fa-sliders-h"></i>
-            </span>
-            <h4>
-              <strong>Гибкость</strong>
-            </h4>
-            <p class="text-faded mb-0">Точная настройка под ваши потребности.</p>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
-            <span class="service-icon rounded-circle mx-auto mb-3">
-              <i class="far fa-clock"></i>
-            </span>
-            <h4>
-              <strong>Своевременность</strong>
-            </h4>
-            <p class="text-faded mb-0">Каждое утро в точно заданное время</p>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <span class="service-icon rounded-circle mx-auto mb-3">
-              <i class="fas fa-lock"></i>
-            </span>
-            <h4>
-              <strong>Безопасность</strong>
-            </h4>
-            <p class="text-faded mb-0">Составление договора о предоставлении услуг</p>
-          </div>
+            <div class="col-lg-12 text-center">
+                <p1><strong>За что вы отдаете свои деньги?</strong></p1>
+            </div>
+            <div class="col-lg-12 blackWhite">
+                <p2><strong>Юридические Лица</strong></p2>
+            </div>
+            <div class="col-lg-4 border2">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <p3><strong>По каким критериям собирается база:</strong></p3>
+                    </div>
+                    <div class="col-lg-12">
+                        <p4>-Тип деятельности</p4>
+                        <br>
+                        <p4>-Город / Область / Страна</p4>
+                    </div>
+                    <div class="col-lg-12 text-center align-text-top">
+                        <p3><strong>Пример базы:</strong></p3>
+                        <button type="button" class="btn btn-block btn-light size2" data-toggle="modal" data-target="#exampleModalCenter1"><img src="image/ur.jpg" class="image"></button>
+                    </div>
+                    <div class="col-lg-12 text-left">
+                        <p3><strong>Чтобы узнать точную цену:</strong></p3>
+                    </div>
+                    <div class="col-lg-12 pt-2">
+                        <input type="number" id="numberOfContacts" placeholder="Введите количество контактов" class="form-control para1">
+                        <div class="col-lg-12 pt-2">
+                            <button class="btn btn-light size3 btn-block" onclick="legalEntities()">Рассчитать</button>
+                            <div class="row text-left">
+                                <div class="col-lg-4">
+                                    <p4>Месяц:</p4>
+                                    <p3 id="outMonth"></p3>
+                                </div>
+                                <div class="col-lg-4">
+                                    <p4>Неделя:</p4>
+                                    <p3 id="outWeek"></p3>
+                                </div>
+                                <div class="col-lg-4">
+                                    <p4>База:</p4>
+                                    <p3 id="outDay"></p3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade bd-example-modal-lg" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content modal1">
+                        <div class="modal-body text-center">
+                            <img src="image/ur.jpg" class="image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8 border3 text-center pt-2">
+                <table class="table table-hover table-sm">
+                <thead>
+                <tr>
+                    <th scope="col">Кол-во контактов</th>
+                    <th scope="col">Подписка на месяц</th>
+                    <th scope="col">Подписка на неделю</th>
+                    <th scope="col">База</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>до 1 000</td>
+                    <td>86 коп./номер</td>
+                    <td>99 коп./номер</td>
+                    <td>80 коп./номер</td>
+                </tr>
+                <tr>
+                    <td>до 3 000</td>
+                    <td>80 коп./номер</td>
+                    <td>86 коп./номер</td>
+                    <td>72 коп./номер</td>
+                </tr>
+                <tr>
+                    <td>до 5 000</td>
+                    <td>72 коп./номер</td>
+                    <td>80 коп./номер</td>
+                    <td>68 коп./номер</td>
+                </tr>
+                <tr>
+                    <td>до 10 000</td>
+                    <td>68 коп./номер</td>
+                    <td>72 коп./номер</td>
+                    <td>64 коп./номер</td>
+                </tr>
+                <tr>
+                    <td>до 20 000</td>
+                    <td>64 коп./номер</td>
+                    <td>68 коп./номер</td>
+                    <td>62 коп./номер</td>
+                </tr>
+                <tr>
+                    <td>до 30 000</td>
+                    <td>62 коп./номер</td>
+                    <td>64 коп./номер</td>
+                    <td>60 коп./номер</td>
+                </tr>
+                <tr>
+                    <td>до 40 000</td>
+                    <td>60 коп./номер</td>
+                    <td>62 коп./номер</td>
+                    <td>58 коп./номер</td>
+                </tr>
+                <tr>
+                    <td>до 50 000</td>
+                    <td>58 коп./номер</td>
+                    <td>60 коп./номер</td>
+                    <td>56 коп./номер</td>
+                </tr>
+                <tr>
+                    <td>до 60 000</td>
+                    <td>56 коп./номер</td>
+                    <td>58 коп./номер</td>
+                    <td>54 коп./номер</td>
+                </tr>
+                <tr>
+                    <td>до 70 000</td>
+                    <td>54 коп./номер</td>
+                    <td>56 коп./номер</td>
+                    <td>52 коп./номер</td>
+                </tr>
+                <tr>
+                    <td>до 80 000</td>
+                    <td>52 коп./номер</td>
+                    <td>54 коп./номер</td>
+                    <td>50 коп./номер</td>
+                </tr>
+                <tr>
+                    <td>до 90 000</td>
+                    <td>50 коп./номер</td>
+                    <td>52 коп./номер</td>
+                    <td>48 коп./номер</td>
+                </tr>
+                <tr>
+                    <td>до 100 000</td>
+                    <td>48 коп./номер</td>
+                    <td>50 коп./номер</td>
+                    <td>44 коп./номер</td>
+                </tr>
+                <tr>
+                    <td>до 500 000</td>
+                    <td>30 коп./номер</td>
+                    <td>30 коп./номер</td>
+                    <td>30 коп./номер</td>
+                </tr>
+                <tr>
+                    <td>от 500 000</td>
+                    <td>20 коп./номер</td>
+                    <td>20 коп./номер</td>
+                    <td>20 коп./номер</td>
+                </tr>
+                </tbody>
+            </table>
+            </div>
+            <div class="col-lg-12 blackWhite">
+                <p2><strong>Физические Лица</strong></p2>
+            </div>
+            <div class="col-lg-4 border2">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <p3><strong>По каким критериям собирается база:</strong></p3>
+                    </div>
+                    <div class="col-lg-12">
+                        <p4>-Пол</p4>
+                        <br>
+                        <p4>-Город / Область / Страна</p4>
+                    </div>
+                    <div class="col-lg-12 text-center">
+                        <p3><strong>Пример базы:</strong></p3>
+                        <button type="button" class="btn btn-block btn-light size2" data-toggle="modal" data-target="#exampleModalCenter2"><img src="image/phis.jpg" class="image"></button>
+                    </div>
+                    <div class="col-lg-12 text-left">
+                        <p3><strong>Чтобы узнать точную цену:</strong></p3>
+                    </div>
+                    <div class="col-lg-12 pt-2">
+                        <input type="number" id="numberOfContacts1" placeholder="Введите количество контактов" class="form-control para1">
+                        <div class="col-lg-12 pt-2">
+                            <button class="btn btn-light size3 btn-block" onclick="individuals()">Рассчитать</button>
+                            <div class="row text-left">
+                                <div class="col-lg-4">
+                                    <p4>Месяц:</p4>
+                                    <p3 id="outMonthPhis"></p3>
+                                </div>
+                                <div class="col-lg-4">
+                                    <p4>Неделя:</p4>
+                                    <p3 id="outWeekPhis"></p3>
+                                </div>
+                                <div class="col-lg-4">
+                                    <p4>База:</p4>
+                                    <p3 id="outDayPhis"></p3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade bd-example-modal-lg" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content modal3">
+                        <div class="modal-body text-center">
+                            <img src="image/phis.jpg" class="image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8 border3 text-center pt-2">
+                <table class="table table-hover table-sm">
+                    <thead>
+                    <tr>
+                        <th scope="col">Кол-во контактов</th>
+                        <th scope="col">Подписка на месяц</th>
+                        <th scope="col">Подписка на неделю</th>
+                        <th scope="col">База</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>до 1 000</td>
+                        <td>57 коп./номер</td>
+                        <td>59 коп./номер</td>
+                        <td>42 коп./номер</td>
+                    </tr>
+                    <tr>
+                        <td>до 3 000</td>
+                        <td>55 коп./номер</td>
+                        <td>57 коп./номер</td>
+                        <td>40 коп./номер</td>
+                    </tr>
+                    <tr>
+                        <td>до 5 000</td>
+                        <td>50 коп./номер</td>
+                        <td>55 коп./номер</td>
+                        <td>35 коп./номер</td>
+                    </tr>
+                    <tr>
+                        <td>до 10 000</td>
+                        <td>45 коп./номер</td>
+                        <td>50 коп./номер</td>
+                        <td>30 коп./номер</td>
+                    </tr>
+                    <tr>
+                        <td>до 20 000</td>
+                        <td>42 коп./номер</td>
+                        <td>45 коп./номер</td>
+                        <td>27 коп./номер</td>
+                    </tr>
+                    <tr>
+                        <td>до 30 000</td>
+                        <td>38 коп./номер</td>
+                        <td>42 коп./номер</td>
+                        <td>23 коп./номер</td>
+                    </tr>
+                    <tr>
+                        <td>до 40 000</td>
+                        <td>35 коп./номер</td>
+                        <td>38 коп./номер</td>
+                        <td>20 коп./номер</td>
+                    </tr>
+                    <tr>
+                        <td>до 50 000</td>
+                        <td>34 коп./номер</td>
+                        <td>35 коп./номер</td>
+                        <td>19 коп./номер</td>
+                    </tr>
+                    <tr>
+                        <td>до 60 000</td>
+                        <td>33 коп./номер</td>
+                        <td>34 коп./номер</td>
+                        <td>18 коп./номер</td>
+                    </tr>
+                    <tr>
+                        <td>до 70 000</td>
+                        <td>32 коп./номер</td>
+                        <td>33 коп./номер</td>
+                        <td>17 коп./номер</td>
+                    </tr>
+                    <tr>
+                        <td>до 80 000</td>
+                        <td>31 коп./номер</td>
+                        <td>32 коп./номер</td>
+                        <td>16 коп./номер</td>
+                    </tr>
+                    <tr>
+                        <td>до 90 000</td>
+                        <td>30 коп./номер</td>
+                        <td>31 коп./номер</td>
+                        <td>15 коп./номер</td>
+                    </tr>
+                    <tr>
+                        <td>до 100 000</td>
+                        <td>28 коп./номер</td>
+                        <td>30 коп./номер</td>
+                        <td>14 коп./номер</td>
+                    </tr>
+                    <tr>
+                        <td>до 500 000</td>
+                        <td>20 коп./номер</td>
+                        <td>20 коп./номер</td>
+                        <td>12 коп./номер</td>
+                    </tr>
+                    <tr>
+                        <td>от 500 000</td>
+                        <td>12 коп./номер</td>
+                        <td>12 коп./номер</td>
+                        <td>10 коп./номер</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
-      </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Callout -->
-    <section class="callout" id="price">
-      <div class="container text-center">
-        <h2 class="mb-5">Хочешь узнать цену?</h2>
-        <a class="btn btn-dark btn-xl button-form" href="files/Price%20List.xlsx" aria-label="Скачать">Прайс лист</a>
-      </div>
-    </section>
-
-    <!-- Portfolio -->
-
-
-    <!-- Call to Action -->
-    <section class="content-section bg-primary text-white" id="order">
-      <div class="span9 centred">
-        <div class="col-lg-6">
-          <form id="main-contact-form" class="contact-form" name="contact-form" method="post" action="https://formspree.io/commonbonobo@gmail.com">
-            <div class="col">
-              <label>Имя *</label>
-              <input type="name" name="name" class="form-control" required="required">
+<section class="bottom" id="bottom">
+    <div class="container pt-2">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <p1><strong> Как получить базу контактов?</strong></p1>
             </div>
-            <div class="col">
-              <label>Email *</label>
-              <input type="email" name="email" class="form-control" required="required">
+            <div class="col-lg-3 pt-2 border2 text-justify">
+                <p3>Вы оставляете заявку и ожидаете звонка нашего специалиста</p3>
             </div>
-            <div class="col">
-              <label>Телефон *</label>
-              <input type="phonenumber" name="phonenumber" class="form-control" required="required">
+            <div class="col-lg-3 pt-2 border4 text-justify">
+                <p3>Обсуждаем все детали по критериям и количеству контактов</p3>
             </div>
-            <div class="col">
-              <label>Название компании *</label>
-              <input type="company" name="company" class="form-control" required="required">
+            <div class="col-lg-3 pt-2 border4 text-justify">
+                <p3>Подписываем договор "оказания услуг" и вы оплачиваете заказ</p3>
             </div>
-            <div class="col">
-              <label>Коментарий</label>
-              <input name="message" id="message" type="company" name="company" class="form-control">
+            <div class="col-lg-3 pt-2 border3 text-justify">
+                <p3>На следующее утро вы уже получаете базу контактов</p3>
             </div>
-            <div class="col">
-              <button type="submit" name="submit" class="btn btn-dark btn-xl button-form" required="required">Заказать</button>
+            <div class="col-lg-12 text-center pt-2">
+                <p1><strong> Почему именно мы?</strong></p1>
             </div>
-          </form>
+            <div class="col-lg-2 text-center pt-2">
+                <i class="fas fa-lock round"></i>
+                <br>
+                <p3><strong>Надежность</strong></p3>
+                <br>
+                <p5>Достоверные данные с минимальным процентом погрешности</p5>
+            </div>
+            <div class="col-lg-2 text-center pt-2 ml-auto">
+                <i class="fas fa-business-time round"></i>
+                <br>
+                <p3><strong>Актуальность</strong></p3>
+                <br>
+                <p5>База контактов обновляется ежедневно</p5>
+            </div>
+            <div class="col-lg-2 text-center pt-2 ml-auto">
+                <i class="fas fa-sliders-h round"></i>
+                <br>
+                <p3><strong>Гибкость</strong></p3>
+                <br>
+                <p5>Вызрузка, точно настроенная под ваши потребности</p5>
+            </div>
+            <div class="col-lg-2 text-center pt-2 ml-auto">
+                <i class="far fa-clock round"></i>
+                <br>
+                <p3><strong>Пунктуальность</strong></p3>
+                <br>
+                <p5>Отправка базы в точно назначенное время</p5>
+            </div>
+            <div class="col-lg-2 text-center pt-2 ml-auto">
+                <i class="fas fa-file-contract round"></i>
+                <br>
+                <p3><strong>Безопасность</strong></p3>
+                <br>
+                <p5>Составление договора "оказания услуг" с каждым клиентом</p5>
+            </div>
         </div>
-      </div>
-    </section>
-    <!-- Footer -->
+    </div>
+</section>
 
-    <!-- Scroll to Top Button-->
-    <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
-      <i class="fas fa-angle-up"></i>
-    </a>
+<section class="order" id="order">
+    <div class="container pt-2">
+        <div class="row border1">
+            <div class="col-lg-7 grey1"></div>
+            <div class="col-lg-5 text-center">
+                <p2><strong>Осталось только оставить данные для оформления <p1>заказа</p1></strong></p2>
 
-    <!-- Place this tag in your head or just before your close body tag. -->
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+                <form action="https://formspree.io/bonobogroup0@gmail.com" method="POST">
+                    <div class="form-group">
+                        <input type="text" class="form-control para" placeholder="Имя" name="Имя">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control para" placeholder="E-mail" name="E-mail">
+                    </div>
+                    <div class="form-group">
+                        <input type="number" class="form-control para" placeholder="Номер телефона" name="Номер телефона">
+                    </div>
+                    <button class="btn btn-light btn-lg btn-block size1" type="submit" value="Send">Заказать</button>
+                </form>
+            </div>
+            <div class="col-lg-12 probel"></div>
+        </div>
+    </div>
+</section>
 
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="js/stylish-portfolio.min.js"></script>
-
-  </body>
-
+<footer>
+    <div class="container pt-2">
+        <div class="row">
+            <div class="col-lg-12 probel"></div>
+            <div class="col-lg-2">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <img src="image/logo.png" width="70px" height="70px">
+                    </div>
+                    <div class="col-lg-12 text-center">
+                        <a href="#header" class="btn btn-block btn-light size2">Главная</a>
+                        <a href="#top" class="btn btn-block btn-light size2">О нас</a>
+                        <a href="#center" class="btn btn-block btn-light size2">Стоимость</a>
+                        <a href="#bottom" class="btn btn-block btn-light size2">Преимущества</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7 pt-2 text-justify">
+                <p5>Отправляя заявки с данного сайта, вы выражаете своё согласие на: сбор, обработку, использование, запись, систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение, передачу (распространение) ваших персональных данных, указанных в заявке, согласно
+                    <a href="http://www.consultant.ru/document/cons_doc_LAW_61801/" target="_blank" style="color: black"><ins> Федеральному закону №152-ФЗ «О персональных данных» от 27.07.2016.</ins></a>
+                </p5>
+                <br>
+                <p5>
+                    Обращаем Ваше внимание на то, что данный интернет-сайт носит исключительно информационный характер и ни при каких условиях не является публичной офертой, определяемой положениями
+                    <a href="http://www.consultant.ru/document/cons_doc_LAW_5142/1a77b2ec302d6a384a228dff59e53680ccffaaca/" target="_blank" style="color: black"><ins>статьи 437 (2) Гражданского кодекса Российской Федерации.</ins></a>
+                    Для получения подробной информации о стоимости услуг, пожалуйста, обращайтесь к менеджерам отдела продаж.
+                </p5>
+            </div>
+            <div class="col-lg-3">
+                <p2><strong>Контакты:</strong></p2>
+                <br>
+                <p5><i class="fas fa-phone"></i> 8-863-307-86-04</p5>
+                <br>
+                <p5><i class="fas fa-at"></i> goodmorningrf1@gmail.com</p5>
+                <button type="button" class="btn btn-block btn-light size2" data-toggle="modal" data-target="#exampleModalCenter">
+                    Обратный звонок
+                </button>
+            </div>
+            <div class="col-lg-12 probel"></div>
+        </div>
+    </div>
+</footer>
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content modal2">
+            <div class="modal-body text-center">
+                <p2><strong>Наши специалисты свяжутся с вами в ближайшее время</strong></p2>
+                <form action="https://formspree.io/bonobogroup0@gmail.com" method="POST">
+                    <div class="form-group">
+                        <input type="text" class="form-control para" placeholder="Имя" name="Имя">
+                    </div>
+                    <div class="form-group">
+                        <input type="number" class="form-control para" placeholder="Номер телефона" name="Номер телефона">
+                    </div>
+                    <button class="btn btn-light btn-lg btn-block size1" type="submit" value="Send">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function(){
+        $('a[href*="#"]').on("click", function(e){
+            let anchor = $(this);
+            $('html, body').stop().animate({
+                scrollTop: $(anchor.attr('href')).offset().top
+            }, 777);
+            e.preventDefault();
+            return false;
+        });
+    });
+</script>
+</body>
 </html>
